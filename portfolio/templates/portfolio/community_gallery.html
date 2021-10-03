@@ -1,0 +1,40 @@
+<html lang="en"> 
+{% load static %}
+
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Community gallery</title> 
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <link rel="stylesheet" type="text/css" href="{% static 'portfolio/Glitch.css' %}">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+      </script> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+      </script> 
+</head> 
+<body class="community">
+<h1 style="padding-left: 15px; color: ghostwhite">Community Gallery</h1>
+<h2 style="padding-left: 15px;"><a style="color: #1fb5b5" href="image_upload">Return to homepage</a></h2>
+</div> 
+    {% for upload in uploads %} 
+            <div class="col-sm-4"> 
+                    <h2 id=uploadName>{{ upload.name }}</h2>
+                     <img src="{{ upload.thumbnail.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+                     <br>
+                     <img src="{{ upload.thumbnail2.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+                     <br>
+                     <img src="{{ upload.thumbnail3.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+                     <br>
+                     <img src="{{ upload.thumbnail4.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+                     <br>
+                     <img src="{{ upload.thumbnail5.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+                     <br>
+                     <img src="{{ upload.thumbnail6.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" /> 
+
+                   </div>
+    {% endfor %}
+<div>
+</div>
+</body> 
+</html> 

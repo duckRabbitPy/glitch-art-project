@@ -1,0 +1,31 @@
+<html lang="en"> 
+{% load static %}
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Portfolio Images</title> 
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+      </script> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+      </script> 
+</head> 
+<body style="background-color: ghostwhite;">
+<h1 style="padding-left: 15px">Filter Portfolio</h1>
+<br>
+<h4><a href="image_upload" style="padding-left: 15px ;">Return to homepage</a></h4>
+<!-- Borrowed some code here to help format images () -->
+</div> 
+     {% for admin_upload in admin_uploads %}
+    {% if forloop.first %}<div class="row">{% endif %}
+    <div class="col-xs-4">
+             <h2 id=uploadName style="margin-left: 10px" >{{ admin_upload.title }}</h2>
+              <img src="{{ admin_upload.image.url }}" class="img-responsive" style="width: 100%;float: left; margin-left: 10px; margin-right: 10px;" /> 
+              <p style="padding-left: 20px">{{ admin_upload.body }}</p>
+        </div>
+    {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+    {% if forloop.last %}</div>{% endif %}
+{% endfor %}
+</div>
+</body> 
+</html> 

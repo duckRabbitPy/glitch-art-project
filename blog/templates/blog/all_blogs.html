@@ -1,0 +1,9 @@
+<h1>Glitch art blog</h1> 
+
+{% for blog in blogs %}
+
+<h2>{{ blog.title }}</h2>
+<img src="{{ blog.image.url }}">
+<h3>{{ blog.body }}</h3>
+
+{% endfor %}

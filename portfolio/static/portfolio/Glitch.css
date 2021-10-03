@@ -1,0 +1,83 @@
+.homebody{
+	background-image: url("fav.png");
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.homeh1 {font-family: 'Roboto Condensed', sans-serif;
+text-align: center;}
+
+.homeh3 {font-family: 'Roboto Condensed', sans-serif;
+text-align: center;}
+
+#uploadName {font-family: 'Roboto Condensed', sans-serif;
+text-align: center;
+color: white;}
+
+.homeP {font-family: 'Roboto Condensed', sans-serif;
+text-align: center;}
+
+.form-check {color:aqua;
+	margin-left: 350px;}
+
+.form-group {margin-left: 150px;
+		text-align: justify;}
+
+.containerPad {border-radius: 10%;
+	background-color: purple;
+	margin-top:5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	opacity: 0.8;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	min-width: 55%;
+	max-width: 80%;
+	color: white;}
+
+/* .containerPad {border-radius: 25px;
+	background-color: purple;
+	margin-top:80px;
+	margin-left: 300px;
+	margin-right: 300px;
+	opacity: 0.8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-width: 576px;
+	color: white;}
+
+*/
+
+.process {margin-left: 350px;}
+
+
+/* About page CSS */
+
+
+#Icon {display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 200px;}
+
+.containerAbout {border-radius: 25px;
+  background-color: ghostwhite;
+  margin-top:5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  opacity: 1;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  min-width: 55%;
+  color: black;}
+
+.aboutbody {background-image: url("triangle.png") ;text-align: left;
+font-family: 'Roboto Condensed', sans-serif;}
+
+.aboutP {padding-left: 20px;
+    padding-right: 20px;}
+
+.abouth1 {padding-left: 20px;}
+
+.errorpage {background-image: url("Dragon.png");}
+
+.community {background-color: #4b6180;}
